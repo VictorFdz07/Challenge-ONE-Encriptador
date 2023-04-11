@@ -316,6 +316,9 @@ footer {
         line-height: 19px;
         text-align: center;
     }
+    footer {
+        top: 1000px;
+    }
 }
 
 /* Estilos para pantallas medianas (tablet) */
@@ -341,8 +344,8 @@ footer {
         top: 240px;
 
         font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+        font-size: 32px;
+        line-height: 150%;
     }
     .box {
         padding: 32px;
@@ -466,7 +469,151 @@ footer {
 }
 
 /* Estilos para pantallas pequeñas (celular) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .content {
+        position: relative;
+        display: flex;
+
+        width: 375px;
+        height: 933px;
+    }
+
+    .logo {
+        left: 4.27%;
+        top: 1%;
+    }
+    .input-text {
+        width: 343px;
+        height: 48px;
+        left: 16px;
+        top: 152px;
+
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+    .box {
+        padding: 32px;
+        gap: 32px;
+
+        width: 280px;
+        height: 186px;
+        left: 10px;
+        top: 707px;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .doll-image {
+        display: none;
+    }
+    .no-message {
+        width: 263px;
+        height: 58px;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        left: 10%;
+    }
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+    .result-text, .caption-text {
+        width: 263px;
+        height: 58px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        top: 50%;
+        left: 10%;
+    }
+    .warning {
+        padding: 0px;
+        gap: 8px;
+
+        width: 229px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+    }
+    .exclamation_image {
+        width: 16px;
+        height: 16px;
+    }
+    .disclaimer {
+        width: 205px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+
+        left: 10%;
+
+    }
+    .btn-copy {
+        padding: 24px;
+        gap: 8px;
+
+        width: 279px;
+        height: 67px;
+        
+        left: 10%;
+        top: 50%;
+
+        border: 1px solid var(--dark-blue-300);
+        border-radius: 24px;
+    }
+    .btn-container {
+        flex-direction: column;
+        padding: 0px;
+        gap: 24px;
+
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+    }
+    .btn-encriptar {
+        padding: 24px;
+        gap: 8px;
+
+        width: 328px;
+        height: 67px;
+
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+    .btn-desencriptar {
+        border: 1px solid  var(--dark-blue-300);
+        border-radius: 24px;
+
+        padding: 24px;
+        gap: 8px;
+
+        width: 328px;
+        height: 67px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+    footer {
+        top: 1000px;
+    }
+}
 
 .hide {
     display: none;

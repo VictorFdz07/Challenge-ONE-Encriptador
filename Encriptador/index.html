@@ -12,16 +12,24 @@
 <body>
     <div class="content">
 
-        <img src="assets/img/logo.svg" alt="logo_asv" class="logo">
+        <img src="assets/img/logo.svg" alt="logo_svg" class="logo">
         <textarea class="input-text" id="input-text" placeholder="Ingrese el texto aqui"></textarea>
         
         <div class="box">
-            <img src="assets/img/Muñeco.svg" alt="Muñeco_asv" class="doll-image">
+            <img src="assets/img/Muñeco.svg" alt="Muñeco_svg" class="doll-image" id="doll-image">
             <p class="no-message" id="no-message"><strong>Ningún mensaje fue encontrado</strong></p>
-            <p class="result-text" id="result-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p class="caption-text" id="caption-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p class="result-text hide" id="result-text"></p>
+            <button class="btn-copy" id="btn-copy">Copiar</button>
         </div>
-
-        <div class="foot"></div>
+        <div class="warning">
+            <img src="assets/img/bi_exclamation-circle-fill.svg" alt="exclamation_svg" class="exclamation_image">
+            <p class="disclaimer">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn-encriptar" id="btn-encriptar">Encriptar</button>
+            <button class="btn-desencriptar" id="btn-desencriptar">Desencriptar</button>
+        </div>
     </div>
 </body>
 </html>

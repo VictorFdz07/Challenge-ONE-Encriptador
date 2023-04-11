@@ -172,6 +172,10 @@ body{
 .btn-encriptar:hover {
     background-color: var(--dark-blue-200);
 }
+footer {
+    position: absolute;
+    top: 100%;
+}
 /* Estilos para pantallas grandes (desktop) */
 @media only screen and (min-width: 1024px) {
     /* Logo */

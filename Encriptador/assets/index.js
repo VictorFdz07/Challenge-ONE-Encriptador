@@ -85,6 +85,7 @@ function imprimirResultado(cadenaEncriptada) {
     no_message.classList.add('hide');
     caption_text.classList.add('hide');
     result_text.classList.remove('hide');
+    btn_copy.classList.remove('hide');
 
     result_text.style.top = 2 + '%';
     result_text.style.textAlign = 'left';
@@ -108,4 +109,5 @@ function mensajeNoEncontrado(){
     no_message.classList.remove('hide');
     caption_text.classList.remove('hide');
     result_text.classList.add('hide');
+    btn_copy.classList.add('hide');
 }

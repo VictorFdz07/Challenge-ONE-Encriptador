@@ -1,0 +1,130 @@
+:root{
+    /*Colors*/
+    /*Light Blue*/
+    --light-blue: #F3F5FC;
+    --light-blue-100: #E5E5E5;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+
+    /*Dark Blue*/
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+
+    /*Gray*/
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    
+    /*Utility*/
+    --font: 'Inter';
+}
+
+body{
+    background: var(--light-blue);
+    font-family: var(--font);
+    color: var(--dark-blue-300);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para pantallas grandes (desktop) */
+@media only screen and (min-width: 1024px) {
+    /* Logo */
+    .logo {
+        /* Auto layout */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        left: 40px;
+        top: 40px;
+    }
+    /* Input text */
+    .input-text {
+        position: absolute;
+        width: 577px;
+        height: 48px;
+        left: 240px;
+        top: 168px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+
+        color: var(--dark-blue-300);
+        background-color: var(--light-blue);
+
+        border: none;
+        resize: none;
+    }
+    .input-text:focus{
+        outline: none;
+    }
+    ::placeholder {
+        color: var(--dark-blue-300);
+    }
+
+    /*Rectangulo*/
+    .box {
+        display: flex;
+        align-items: center;
+
+        position: absolute;
+        width: 400px;
+        height: 900px;
+        left: 75%;
+        top: 40px;
+
+        background: white;
+        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    /*Muñeco*/
+    .doll-image {
+        position: absolute;
+        width: 90%;
+        left: 20px;
+        top: 243px;
+    }
+    /* Ningún mensaje fue encontrado */
+    .no-message {
+        width: 336px;
+        height: 58px;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 29px */
+
+        text-align: center;
+
+        color: var(--gray-500);
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+}
+
+/* Estilos para pantallas medianas (tablet) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+/* Estilos para pantallas pequeñas (celular) */
+@media only screen and (max-width: 767px) {}
